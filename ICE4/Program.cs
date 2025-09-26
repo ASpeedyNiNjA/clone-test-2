@@ -160,12 +160,12 @@ namespace ICE4
                             }
                             return total;
                         }
-                        Agility = d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11);
-                        Strength = d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11);
-                        Vigour = d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11);
-                        Perception = d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11);
-                        Intellect = d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11);
-                        Will = d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11);
+                        Agility = Roll5d10();
+                        Strength = Roll5d10();
+                        Vigour = Roll5d10();
+                        Perception = Roll5d10();
+                        Intellect = Roll5d10();
+                        Will = Roll5d10();
                         HasChosenCareer = true;
                         break;
 
