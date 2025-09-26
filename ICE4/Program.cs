@@ -8,10 +8,16 @@ namespace ICE4
     {
         static void Main(string[] args)
         {
-            // variable declaration
+            // ICE 4 Step 3
+            ConsoleKey NextKey = ConsoleKey.None;
+            while (NextKey != ConsoleKey.Q && NextKey != ConsoleKey.Escape)
+            {
+                // program code here
+                NextKey = Console.ReadKey(true).Key;
+            }
 
-            
-             
+
+
             // Character's Name
             string CharacterName = "Unknown";
 
@@ -174,9 +180,12 @@ namespace ICE4
                 Console.WriteLine($"Resolve         : {Resolve}");
                 Console.WriteLine("------------------------------------------------------");
                 Console.WriteLine("Press Q or Ext to Exit");
-                NextKey = Console.ReadKey(true).Key;
-                Console.Clear();
-                continue;
+                
+                
+                /* Unfinished code section from class */
+                //NextKey = Console.ReadKey(true).Key;
+                //Console.Clear();
+                //continue;
             }
 
             
