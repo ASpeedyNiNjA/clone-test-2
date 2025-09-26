@@ -175,7 +175,7 @@ namespace ICE4
                 Console.WriteLine("------------------------------------------------------");
                 Console.WriteLine("Press Q or Ext to Exit");
                 NextKey = Console.ReadKey(true).Key;
-                Console.Clear()
+                Console.Clear();
                 continue;
             }
 
