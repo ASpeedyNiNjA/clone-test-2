@@ -8,7 +8,10 @@ namespace ICE4
     {
         static void Main(string[] args)
         {
-            // ICE 4 Step 3
+
+
+
+            // ICE 4 Step 3 We Do (Outer Loop)
             ConsoleKey NextKey = ConsoleKey.None;
             while (NextKey != ConsoleKey.Q && NextKey != ConsoleKey.Escape)
             {
@@ -146,6 +149,17 @@ namespace ICE4
 
                         Career = "Random";
                         Random d10 = new Random();
+
+                        //ICE 4 Step 1 You Do Local Function
+                        int Roll5d10()
+                        {
+                            int total = 0;
+                            for (int die = 0; die < 5; die++)
+                            {
+                                total += d10.Next(1, 11);
+                            }
+                            return total;
+                        }
                         Agility = d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11);
                         Strength = d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11);
                         Vigour = d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11) + d10.Next(1, 11);
