@@ -15,9 +15,7 @@ namespace ICE4
             ConsoleKey NextKey = ConsoleKey.None;
             while (NextKey != ConsoleKey.Q && NextKey != ConsoleKey.Escape)
             {
-                // program code here
-                //NextKey = Console.ReadKey(true).Key;
-                //}
+     
 
 
 
@@ -68,7 +66,7 @@ namespace ICE4
                 Console.WriteLine("5. Tinker (AGL: 30, STR: 35, VGR: 25, PER: 30, INT: 35, WIL: 25)");
                 Console.WriteLine("6. Random ");
                 Console.Write("You Selection: ");
-                //CareerChoice = Convert.ToInt32(Console.ReadLine());
+               
 
                 bool IsValid = false;
                 while (!IsValid)
@@ -170,9 +168,9 @@ namespace ICE4
                         break;
 
                     default:
-                        Console.WriteLine("You entered an incorrect choice. Please run the program again.");
+                       // Console.WriteLine("You entered an incorrect choice. Please run the program again.");
                         HasChosenCareer = false;
-                        Console.WriteLine("Press any key to exit");
+                       // Console.WriteLine("Press any key to exit");
                         continue;
                 }
 
@@ -209,33 +207,11 @@ namespace ICE4
                     Console.WriteLine("Press Q or Ext to Exit");
 
 
-                    /* Unfinished code section from class */
+                    /* Finished code section from class */
                     NextKey = Console.ReadKey(true).Key;
                     Console.Clear();
                     continue;
                 }
-
-
-
-                /*
-                    for(int row = 0; row < 10; row++)
-                {
-                    if (row == 0 || row == 9)
-                    {
-
-                        for (int col = 0; col < 10; col++)
-                        {
-                            Console.Write("!");
-                        }
-                    }
-                    else
-                    {
-                        Console.Write("!        !");
-                    }
-                        Console.WriteLine();
-                }
-
-                */
 
             }
 
