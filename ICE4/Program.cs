@@ -10,6 +10,8 @@ namespace ICE4
         {
             // variable declaration
 
+            
+             
             // Character's Name
             string CharacterName = "Unknown";
 
@@ -171,9 +173,33 @@ namespace ICE4
                 Console.WriteLine($"Toughness       : {Toughness}");
                 Console.WriteLine($"Resolve         : {Resolve}");
                 Console.WriteLine("------------------------------------------------------");
-                Console.WriteLine("Press any key to continue");
-                Console.ReadKey(true);
+                Console.WriteLine("Press Q or Ext to Exit");
+                NextKey = Console.ReadKey(true).Key;
+                Console.Clear()
+                continue;
             }
+
+            
+
+            /*
+                for(int row = 0; row < 10; row++)
+            {
+                if (row == 0 || row == 9)
+                {
+
+                    for (int col = 0; col < 10; col++)
+                    {
+                        Console.Write("!");
+                    }
+                }
+                else
+                {
+                    Console.Write("!        !");
+                }
+                    Console.WriteLine();
+            }
+
+            */
 
         }
     }
