@@ -2,7 +2,7 @@
 
 using System.Reflection.PortableExecutable;
 
-namespace ICE4
+namespace ICE5
 {
     internal class Program
     {
